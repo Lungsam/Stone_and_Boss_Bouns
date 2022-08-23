@@ -1,0 +1,9 @@
+#find
+
+ //POINT_MAX_NUM =
+ 
+#add  Before
+#ifdef ENABLE_S_B_SYSTEM
+	POINT_ATTBONUS_STONE,
+	POINT_ATTBONUS_BOSS,
+#endif

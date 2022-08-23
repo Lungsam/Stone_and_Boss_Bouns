@@ -1,0 +1,27 @@
+#find (MartySama) useing 
+
+	{ POINT_RESIST_MAGIC_REDUCTION,	},	// APPLY_RESIST_MAGIC_REDUCTION,97
+
+#or
+	{ POINT_RESIST_CLAW,			},	// APPLY_RESIST_CLAW,			96 CLAW??¡Æ? ???¡¿
+
+#after
+
+#ifdef ENABLE_S_B_SYSTEM
+	{ POINT_ATTBONUS_STONE,},
+	{ POINT_ATTBONUS_BOSS,},
+#else
+	{ POINT_NONE,}, // POINT_ATTBONUS_STONE
+	{ POINT_NONE,}, // POINT_ATTBONUS_BOSS
+#endif
+
+#find
+
+    { NULL,		0			}
+
+# add Before
+
+#ifdef ENABLE_S_B_SYSTEM
+	{"ATTBONUS_STONE", APPLY_ATTBONUS_STONE},
+	{"ATTBONUS_BOSS", APPLY_ATTBONUS_BOSS},
+#endif

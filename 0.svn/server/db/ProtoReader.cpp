@@ -1,0 +1,22 @@
+#find
+
+			"APPLY_BLEEDING_REDUCE", "APPLY_BLEEDING_PCT", "APPLY_ATTBONUS_WOLFMAN", "APPLY_RESIST_WOLFMAN", "APPLY_RESIST_CLAW",
+			"APPLY_RESIST_MAGIC_REDUCTION", // 97
+
+#add after
+
+#ifdef ENABLE_S_B_SYSTEM
+			,"APPLY_ATTBONUS_STONE", "APPLY_ATTBONUS_BOSS"
+#endif
+
+#find
+
+int get_Mob_RaceFlag_Value(string inputString)
+	string arRaceFlag[] = {"ANIMAL","UNDEAD","DEVIL","HUMAN","ORC","MILGYO","INSECT","FIRE","ICE","DESERT","TREE",
+		"ATT_ELEC","ATT_FIRE","ATT_ICE","ATT_WIND","ATT_EARTH","ATT_DARK"
+
+#add after
+
+#ifdef ENABLE_S_B_SYSTEM
+		,"STONE","BOSS"
+#endif

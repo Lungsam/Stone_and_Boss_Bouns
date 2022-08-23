@@ -1,0 +1,2 @@
+TOOLTIP_APPLY_ATTBONUS_STONE	قوي ضد الماتينات +%d%%	SA
+TOOLTIP_APPLY_ATTBONUS_BOSS	قوي ضد الزعماء+%d%%	SA
